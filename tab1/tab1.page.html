@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"  class="ion-padding">
+
+  <ion-list>
+    <!--Text-->
+    <ion-item>
+      <ion-label>Text = </ion-label>
+      <ion-input [(ngModel)]="text"></ion-input>
+    </ion-item>
+    <!--Rate-->
+    <ion-item>
+      <ion-range min="1" max="10" step="1" [(ngModel)]="rate">
+        <ion-icon small range-left name="remove"></ion-icon>
+        <ion-icon small range-right name="add"></ion-icon>
+      </ion-range>
+    </ion-item>
+
+    
+    <ion-button full (click)="playText()">Play Text</ion-button>
+    <ion-button full (click)="stopPlay()">Stop</ion-button>
+  </ion-list>
+</ion-content>

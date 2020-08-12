@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+<!--Text-->
+    <ion-item>
+      <ion-label>Enter Phone Number =</ion-label>
+      <ion-input [(ngModel)]="phoneNumber"></ion-input>
+    </ion-item>
+    
+    <ion-button class="ion-call-button" full (click)="callNow()">Call Now</ion-button>
+
+  
+  
+  
+  
+</ion-content>
